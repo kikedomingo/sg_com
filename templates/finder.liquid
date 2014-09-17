@@ -1,0 +1,59 @@
+{% block styles %}
+	<style>
+		.top-filler {
+		  background-image: url("app/img/cover_6.jpg");
+		}
+	</style>
+
+{% endblock %}
+
+{% block content %}
+		{% include "header" %}
+		<div class="top-filler bg_img parallax">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 fadeonscroll">
+						<h2>This is a the title for the page</h2>
+					</div>
+				</div>
+			</div>
+			<div class="shadow fadeonscroll"></div>
+		</div>
+
+
+		<section class="" id="">
+			<div class="full-width">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							{{ 1 | lorem_ipsum:'p' }}
+							<h3>This is a h3 subtitle</h3>
+							<hr>
+							
+							<!-- Obviously this is a dummy course finder... -->
+							<img src="app/img/cf.png" style="max-width:100%">
+							<!-- / -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="full-width bg_img" id="testimonial">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<cite>Study Group prepares students for life in a global society and success in a global economy.</cite>
+						<span>Bla bla</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		{% include "brands" %}
+		{% include "footer" %}
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% block styles %}
+	<style>
+		.top-filler {
+		  background-image: url("app/img/cover_7.jpg");
+		}
+	</style>
+
+{% endblock %}
+
+{% block content %}
+		{% include "header" %}
+		<div class="top-filler bg_img parallax">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 fadeonscroll">
+						<h2>This is a the title of the page</h2>
+					</div>
+				</div>
+			</div>
+			<div class="shadow fadeonscroll"></div>
+		</div>
+
+
+		<section class="" id="">
+			<div class="full-width">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<h2>Contact an adviser today</h2>
+							<p>Get in touch by filling in the form below. </p>
+							<p>One of our dedicated Student Enrolment Advisers will be in touch shortly, to answer any questions you may have about our programmes and studying in the UK.</p>
+							<hr>
+
+							<!-- Obviously this is a dummy form... -->
+							<img src="app/img/form.png" style="max-width:100%">
+							<!-- / -->
+
+						</div>
+						<div class="col-md-4 sidebar">
+							<div class="widget video">
+								<a href="#"><img src="app/img/video_placeholder.png"></a>
+							</div>
+							<div class="widget textbox">
+								<h3>Widget title</h3>
+					            <p>okdjowe jrouwehf iw ojwn ihwerbg iywerhg woeiyr giwyerg u4wo5y </p>
+							</div>
+
+							<div class="widget testimonial">
+					            <img src="app/img/video_placeholder.png">
+						        <div class="testimonial-wrapper">
+						            <blockquote>Study Group prepares students for life in a global society and success in a global economy.</blockquote>
+						            <cite>A. Student</cite>
+						            <p>Studying something cool</p>
+					            </div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="full-width bg_img" id="testimonial">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<cite>Study Group prepares students for life in a global society and success in a global economy.</cite>
+						<span>Bla bla</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		{% include "brands" %}
+		{% include "footer" %}
+
+{% endblock %}
